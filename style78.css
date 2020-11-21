@@ -1,0 +1,137 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+#main-div{
+    width: 375px;
+    margin: 0 auto;
+}
+#desktop-hero{
+    display: none;
+}
+
+#logo{
+    padding: 15px 0px;
+}
+#logo img{
+ transform: scale(0.65,0.65);   
+}
+#content{
+    text-align: center;
+    padding: 0 35px;
+    font-family: sans-serif;
+}
+#content h3{
+    font-size: 40px;
+    line-height: 1;
+    padding: 0px 30px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+#content span{
+  font-weight: 300; 
+  color: #ce9797; 
+}
+#content p{
+    color: #ce9797; 
+    line-height: 1.3;
+    margin-top: -25px; 
+    font-size: 14px;
+}
+#email-field{
+    margin-top: 15px;
+    border:  1px solid #ce9797;
+    border-radius: 20px;
+    padding: 10px 100px 10px 20px;
+    font-family: sans-serif;
+    color: #ce9797;
+    cursor: pointer;
+
+}
+#email-btn{
+    position: absolute;
+    padding: 4px 18px;
+    border: none;
+    font-family: 400;
+    font-family: sans-serif;
+    font-size: 30px;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 10px 10px hsl(0, 36%, 70%);
+    background-image: linear-gradient(135deg,hsl(0, 80%, 86%),  hsl(0, 74%, 74%));  
+}
+#email-btn:hover{
+    box-shadow: 0 12.5px 7.5px pink;
+    background-image: linear-gradient(135deg ,lightpink ,pink); 
+    cursor: grab;
+}
+#error-img{
+    position: absolute;
+width: 22.5px;
+height: 22.5px;
+    display: none;
+}
+#error-info{
+    font-size: 13px;
+    font-family: sans-serif;
+    color: pink;
+    margin-left: 45px;
+    margin-top: 3px;
+    display: none;
+}
+
+
+/*********** designing the desktop view now************/
+@media  only screen and  (min-width:1000px){
+    body{
+        height: 600px;
+        overflow: hidden;
+    }
+    #main-div{
+        margin: 0;
+        padding-left: 10%;
+        padding-top: 50px;
+   display: inline-block;
+    }
+  
+    #content h3{
+padding: 0;
+font-size: 60px;
+    }
+    #content p{
+      line-height: 1.6;
+      width: 370px;
+      font-size: 14.5px;
+    }
+    #desktop-hero{
+        margin: 0px;
+        display: block;
+        float: right;
+        width: fit-content;
+    }
+    #desktop-hero img{
+        width: 475px;
+    }
+    #email-field{
+        padding: 12.5px 135px 12.5px 20px;
+    }
+    #email-btn{
+        padding: 5.65px 30px;
+      position: absolute;
+    }
+    #mobile-hero {
+        display: none;
+    }
+      #content {
+          text-align: left;
+      }
+      #mobile-hero{
+          display: none;
+      }
+#error-img{
+    position: absolute;
+}
+
+
+}
